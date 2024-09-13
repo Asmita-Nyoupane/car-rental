@@ -1,0 +1,22 @@
+export const carBrands = [
+    "Toyota",
+    "Honda",
+    "Ford",
+    "Chevrolet",
+    "BMW",
+    "Mercedes-Benz",
+    "Audi",
+    "Volkswagen",
+    "Hyundai",
+    "Nissan",
+    "Kia",
+    "Subaru",
+    "Mazda",
+    "Jaguar",
+    "Land Rover",
+    "Lexus",
+    "Porsche",
+    "Acura",
+    "Buick",
+    "GMC"
+];
