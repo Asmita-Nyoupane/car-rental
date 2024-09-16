@@ -122,7 +122,7 @@ const TopBanner = () => {
                 <h1 className="text-4xl md:text-6xl font-bold text-center">
                     <span className='text-secondaryColor'>
                         Luxury
-                    </span>    is not a need, it's an <span className=' text-secondaryColor'>
+                    </span>    is not a need, it&apos;s an <span className='text-secondaryColor'>
                         Experience  </span>
                 </h1>
                 <p className="mt-4 text-center  md:text-xl">

@@ -49,7 +49,7 @@ const SideHeader = () => {
                     {navLinks.map((link: LinkItem, i) => (
                         <Link
                             key={i}
-                            href={link.link}
+                            href={'/'}
                             onClick={closeNavBar} // Close navbar on link click
                             className={`text-md font-medium hover:text-primaryColor 
                                 ${path === link.link ? "text-primaryColor font-semibold" : ""}`}
