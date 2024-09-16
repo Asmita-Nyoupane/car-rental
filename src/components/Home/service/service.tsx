@@ -21,7 +21,7 @@ const Service = () => {
 
             </div>
             <div
-                className='flex flex-wrap gap-5 justify-center items-center p-4'
+                className='flex flex-wrap gap-5 justify-center items-center '
             >
 
                 {
