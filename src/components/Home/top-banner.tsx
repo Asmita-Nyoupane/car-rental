@@ -95,6 +95,7 @@
 // export default TopBanner;
 import React from 'react';
 import { Button } from '../ui/button';
+const bannervideo = '/assets/banners/car-video.mp4';
 
 const TopBanner = () => {
     return (
@@ -102,7 +103,7 @@ const TopBanner = () => {
             {/* Video Background */}
             <video
                 className="absolute top-0 left-0 w-full h-full object-cover"
-                src="/assets/banners/car-video.mp4"
+                src={bannervideo}
                 // type="video/mp4"
                 autoPlay
                 loop
