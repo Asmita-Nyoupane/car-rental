@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { footerLink } from "./footer-link";
+import { Input } from "../ui/input";
+import { IoSend } from "react-icons/io5";
 
 
 
@@ -8,7 +10,7 @@ const TopFooter = () => {
     return (
         <div className="flex flex-col sm:flex-row  gap-10  py-10">
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-10 b w-full">
+            <div className="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-10 b w-full">
                 {/* <div className="flex flex-col    gap-4 md:gap-8"> */}
                 {/* <Image
                     src={"/assets/logo/white-logo.png"}
@@ -44,6 +46,17 @@ const TopFooter = () => {
 
                     ))
                 }
+                <div className="flex flex-col gap-3 ">
+                    <h2 className="sub-header">NewsLetter</h2>
+                    <p className="text-sm">Suscribe us to get the latest news  via email</p>
+                    <div className='flex bg-white  px-2 items-center justify-center rounded-full  shadow-md border-2 border-primaryColor '>
+
+                        <Input type="email" placeholder="Enter Email" className="focus-visible:ring-0  focus-visible:outline-0 h-6 placeholder:text-gray-500 text-black" />
+                        <span className="text-primaryColor font-semibold   p-2 hover:-rotate-12 hover:transition-all duration-200 ease-in-out  cursor-pointer text-xl" >
+                            <IoSend />
+                        </span>
+                    </div>
+                </div>
             </div>
 
         </div >
