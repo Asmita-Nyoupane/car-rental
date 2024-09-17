@@ -133,3 +133,17 @@
     animation-play-state: paused;
   }
 }
+.car-animation {
+    position: relative;
+    animation: moveCar 10s infinite linear;
+    transform: translateX(50%);
+}
+
+@keyframes moveCar {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}

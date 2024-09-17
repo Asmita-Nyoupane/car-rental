@@ -6,7 +6,8 @@ const BottomFooter = () => {
     return (
         <div className="grid  text-sm grid-cols-2 md:grid-cols-3  gap-5 md:gap-10 py-4  ">
 
-            <p className="col-span-2">All Copyright Belongs to Tradevise International</p>
+            <p className="col-span-2">All Copyright Belongs to <span className="text-secondaryColor">Tradevise International
+            </span></p>
 
 
             {/* <div className="flex gap-3   ">
@@ -18,9 +19,9 @@ const BottomFooter = () => {
             <div className="flex gap-4 justify-end ">
                 {
                     socialMediaLinks?.map((media) => (
-                        <Link href={media.link} key={media.name} className="">
+                        <Link href={media.link} key={media.name} className="hover:text-secondaryColor">
 
-                            <span className=" text-2xl font-bold hover:bg-secondaryColor">
+                            <span className=" text-2xl font-bold  ">
                                 {<media.icon />}
                             </span>
 

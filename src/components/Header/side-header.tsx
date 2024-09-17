@@ -22,7 +22,7 @@ const SideHeader = () => {
     return (
         <div className="sticky top-0 left-0   right-0 z-50">
             <div
-                className={`md:hidden flex justify-between items-center px-4 py-2 bg-[#F5F5DC] z-20`}
+                className={`md:hidden flex justify-between items-center px-4 py-2 bg-gray-100 z-20`}
             >
                 <h1 className="text-primaryColor text-5xl font-extrabold">AVIS</h1>
                 <div
@@ -33,13 +33,13 @@ const SideHeader = () => {
                 </div>
             </div>
             <div
-                className={`md:hidden flex flex-col gap-1 items-center bg-slate-50 py-4 fixed top-0 left-0 w-[40%] h-full transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+                className={`md:hidden flex flex-col gap-1 items-center bg-slate-50 py-4 fixed top-0 left-0 w-[50%] h-full transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
             >
                 <div className="absolute top-0 flex  justify-between right-0 p-4 z-10 mb-6 w-full  ">
                     <h1 className="text-primaryColor text-3xl font-extrabold">AVIS</h1>
                     <button
                         onClick={closeNavBar}
-                        className="text-primaryColor  font-bold p-2  shadow-md rounded-full"
+                        className="text-primaryColor  font-bold p-2  hover:bg-gray-100 rounded-full"
                     >
                         <RxCross1 size={24} />
                     </button>
@@ -51,7 +51,7 @@ const SideHeader = () => {
                             key={i}
                             href={'/'}
                             onClick={closeNavBar} // Close navbar on link click
-                            className={`text-md font-medium hover:text-primaryColor 
+                            className={`text-md font-medium hover:text-primaryColor transition-all duration-300 ease-in-out transform hover:scale-110 
                                 ${path === link.link ? "text-primaryColor font-semibold" : ""}`}
                         >
                             {link.name}
