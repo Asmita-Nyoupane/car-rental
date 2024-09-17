@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { LinkItem } from "./top-header";
 import { navLinks } from "./navlink";
+import Image from "next/image";
 
 const SideHeader = () => {
     const path = usePathname();
@@ -24,7 +25,16 @@ const SideHeader = () => {
             <div
                 className={`md:hidden flex justify-between items-center px-4 py-2 bg-gray-100 z-20`}
             >
-                <h1 className="text-primaryColor text-5xl font-extrabold">AVIS</h1>
+                {/* <h1 className="text-primaryColor text-5xl font-extrabold">AVIS</h1> */}
+                <Image
+                    src={'/assets/logo/avis.png'}
+                    alt="logo"
+                    height={100}
+                    width={140}
+                    quality={100}
+                    priority={true}
+                    className="h-[40px] w-auto object-contain"
+                />
                 <div
                     onClick={toggleNavBar}
                     className="text-2xl font-bold text-primaryColor p-2 flex my-auto mb-2 cursor-pointer"
@@ -36,7 +46,15 @@ const SideHeader = () => {
                 className={`md:hidden flex flex-col gap-1 items-center bg-slate-50 py-4 fixed top-0 left-0 w-[50%] h-full transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
             >
                 <div className="absolute top-0 flex  justify-between right-0 p-4 z-10 mb-6 w-full  ">
-                    <h1 className="text-primaryColor text-3xl font-extrabold">AVIS</h1>
+                    <Image
+                        src={'/assets/logo/avis.png'}
+                        alt="logo"
+                        height={100}
+                        width={140}
+                        quality={100}
+                        priority={true}
+                        className="h-[40px] w-auto object-contain"
+                    />
                     <button
                         onClick={closeNavBar}
                         className="text-primaryColor  font-bold p-2  hover:bg-gray-100 rounded-full"

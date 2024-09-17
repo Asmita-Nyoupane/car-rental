@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Button } from '../ui/button';
-import TopHeader from '../Header/top-header';
 const bannervideo = '/assets/banners/car-video.mp4';
 
 const TopBanner = () => {
